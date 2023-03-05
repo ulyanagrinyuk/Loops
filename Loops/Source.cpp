@@ -1,22 +1,22 @@
-#include<iostream>
+п»ї#include<iostream>
 #include<conio.h>
 using namespace std;
 
 #define tab "\t";
 
 //#define WHILE_1
-//#define Задание_1
-//#define Задание_2
-//#define Переменая
+//#define Р—Р°РґР°РЅРёРµ_1
+//#define Р—Р°РґР°РЅРёРµ_2
+//#define РџРµСЂРµРјРµРЅР°СЏ
 //#define Shooter
 void main()
 {
 	setlocale(LC_ALL, "");
 #ifdef WHILE_1
 
-	int i = 0; // Счетчик цикла
-	int n; // Кол-во итераций
-	cout << "Введите количество итераций:"; cin >> n;
+	int i = 0; // РЎС‡РµС‚С‡РёРє С†РёРєР»Р°
+	int n; // РљРѕР»-РІРѕ РёС‚РµСЂР°С†РёР№
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ РёС‚РµСЂР°С†РёР№:"; cin >> n;
 	while (n--) // (n < i)
 	{
 		//cout << ++i << "Hello" << endl;
@@ -26,10 +26,10 @@ void main()
 	cout << endl;
 #endif // WHILE_1
 
-#ifdef Задание_1
+#ifdef Р—Р°РґР°РЅРёРµ_1
 	int number;
 	int reverse = 0;
-	cout << "Введите число:"; cin >> number;
+	cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ:"; cin >> number;
 	int buffer = number;
 	while (buffer)
 	{
@@ -41,18 +41,18 @@ void main()
 	cout << number << endl;
 	if (number == reverse)
 	{
-		cout << "Палиндромное число" << endl;
+		cout << "РџР°Р»РёРЅРґСЂРѕРјРЅРѕРµ С‡РёСЃР»Рѕ" << endl;
 	}
 	else
 	{
-		cout << "Не палиндромное число";
+		cout << "РќРµ РїР°Р»РёРЅРґСЂРѕРјРЅРѕРµ С‡РёСЃР»Рѕ";
 	}
-#endif Задание_1
+#endif Р—Р°РґР°РЅРёРµ_1
 
-#ifdef Задание_2
+#ifdef Р—Р°РґР°РЅРёРµ_2
 	int number;
 	int reverse = 0;
-	cout << "Введите номер автобусного билета:"; cin >> number;
+	cout << "Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ Р°РІС‚РѕР±СѓСЃРЅРѕРіРѕ Р±РёР»РµС‚Р°:"; cin >> number;
 	int buffer = number;
 	while (buffer)
 	{
@@ -62,21 +62,21 @@ void main()
 	}
 	if (number == reverse)
 	{
-		cout << "Счастливый билет" << endl;
+		cout << "РЎС‡Р°СЃС‚Р»РёРІС‹Р№ Р±РёР»РµС‚" << endl;
 	}
 	else {
-		cout << "Обычный билет" << endl;;
+		cout << "РћР±С‹С‡РЅС‹Р№ Р±РёР»РµС‚" << endl;;
 	}
-#endif // Задание_2
+#endif // Р—Р°РґР°РЅРёРµ_2
 
-#ifdef Переменая
-	char key; //эта переменная будет код нажатой клавиши
+#ifdef РџРµСЂРµРјРµРЅР°СЏ
+	char key; //СЌС‚Р° РїРµСЂРµРјРµРЅРЅР°СЏ Р±СѓРґРµС‚ РєРѕРґ РЅР°Р¶Р°С‚РѕР№ РєР»Р°РІРёС€Рё
 	do
 	{
 		key = _getch();
 		cout << (int)key << "\t" << key << endl;
 	} while (key != 27);
-#endif // Переменая
+#endif // РџРµСЂРµРјРµРЅР°СЏ
 
 #ifdef Shooter
 	char key;
@@ -84,23 +84,23 @@ void main()
 	{
 		key = _getch();
 		if (key == 'w' || key == 'W')
-			cout << "Вперед" << endl;
+			cout << "Р’РїРµСЂРµРґ" << endl;
 		else if (key == 's' || key == 'S')
-			cout << "Назад" << endl;
+			cout << "РќР°Р·Р°Рґ" << endl;
 		else if (key == 'a' || key == 'A')
-			cout << "Влево" << endl;
+			cout << "Р’Р»РµРІРѕ" << endl;
 		else if (key == 'd' || key == 'D')
-			cout << "Вправо" << endl;
+			cout << "Р’РїСЂР°РІРѕ" << endl;
 		else if (key == 13)
-			cout << "Огонь" << endl;
+			cout << "РћРіРѕРЅСЊ" << endl;
 		else if (key == ' ')
-			cout << "Прыжок" << endl;
+			cout << "РџСЂС‹Р¶РѕРє" << endl;
 		else
 			cout << "Error" << endl;
 	} while (key != Espace);
 #endif // Shooter	
 	int n;
-	cout << "Введите предельное число:"; cin >> n;
+	cout << "Р’РІРµРґРёС‚Рµ РїСЂРµРґРµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ:"; cin >> n;
 	for (int i = 0; i <= n; i++)
 	{
 		bool simple = true;
